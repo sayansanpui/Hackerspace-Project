@@ -1,48 +1,193 @@
-@media (max-width: 1024px) {
-
-    /* about section */
-
-
+@media (max-width: 1060px) {
+    .section-p1 {
+        padding: 64px 58px 76px 60px;
+    }
+    #header {
+        width: 100%;
+    }
+    #intro {
+        height: 150vh;
+        background: url(../assets/images/background.png) 50% 0 repeat-y fixed;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        padding: 0 100px 0 70px;
+    }
+    #intro .intro-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    #intro .intro-heading {
+        margin-bottom: 50px;
+    }
+    #contact .contact-img .contact-subimg .circle {
+        height: 377px;
+    }
+    #contact .contact-img .contact-subimg .html {
+        height: 75px;
+        top: 52px;
+        left: 42%;
+    }
+    #contact .contact-img .contact-subimg .css {
+        height: 85px;
+        top: 46%;
+        right: 2%;
+    }
+    #contact .contact-img .contact-subimg .js {
+        height: 65px;
+        bottom: 4%;
+        right: 18%;
+    }
+    #contact .contact-img .contact-subimg .react {
+        height: 85px;
+        bottom: 2%;
+        left: 15%;
+    }
+    #contact .contact-img .contact-subimg .typescript {
+        height: 65px;
+        top: 49%;
+        left: 4%;
+    }
 }
 
-@media (max-width: 991px) {
-
-    /* custom classes */
-
-
-    /* navbar brand */
-
-
-    /* Banner Design */
-
-
-    /* carousel design */
-
+@media (max-width: 975px) {
+    #header .header-icon {
+        display: none;
+    }
+    #contact .contact-content {
+        flex-direction: column;
+    }
+    #contact .contact-content h3 {
+        text-align: center;
+    }
+    #contact .contact-heading {
+        align-items: center;
+    }
 }
 
-@media (max-width: 767px) {
-
-    /* costom css */
-
-
-    /* top banner */
-
-
-    /* story section */
-
-
-    /* carousel design */
-
-
-    /* newslettar */
-
-
-    /* footer link */
-
+@media (max-width: 855px) {
+    .section-p1 {
+        padding: 0;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    
+    #mobile i {
+        padding-left: 20px;
+        font-size: 24px;
+        color: #1a1a1a;
+    }
+    #close {
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+        position: absolute;
+        display: initial;
+    }
+    #intro .intro-btn {
+        display: block;
+        margin-top: 20px;
+    }
+    #header .main-btn {
+        display: none;
+    }
+    #intro .intro-content {
+        margin-top: 45px;
+    }
+    #intro {
+        height: 100vh;
+    }
+    #intro {
+        padding: 0 35px;
+    }
+    #footer-section {
+        margin-top: 40px;
+    }
 }
 
-@media (max-width: 330px) {
-
-    /* carousel design */
-
+@media (max-width: 685px) {
+    #header .nevbar-border {
+        display: none;
+    }
+    #intro {
+        padding: 0 20px;
+    }
+    #intro {
+        height: 100vh;
+    }
+    #intro .intro-search {
+        width: 100%;
+    }
+    #intro .intro-heading {
+        margin-bottom: 0;
+    }
+    #contact .contact-heading {
+        width: 100%;
+    }
+    h2 {
+        font-size: 37px;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    #contact .contact-content h3 {
+        font-size: 34px;
+    }
+    #contact .contact-content h4 {
+        /* margin: 43px 0; */
+        margin-top: 0;
+        font-size: 21px;
+    }
+    #contact .contact-btn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact .contact-btn .long-btn {
+        margin-bottom: 15px;
+        padding: 8px 20px
+    }
+    #contact .contact-img .contact-subimg .circle {
+        height: 254px;
+    }
+    
+    #contact .contact-img .contact-subimg .html {
+        height: 52px;
+        top: 64px;
+        left: 42%;
+    }
+    
+    #contact .contact-img .contact-subimg .css {
+        height: 63px;
+        top: 48%;
+        right: 5%;
+    }
+    
+    #contact .contact-img .contact-subimg .js {
+        height: 44px;
+        bottom: 4%;
+        right: 21%;
+    }
+    
+    #contact .contact-img .contact-subimg .react {
+        height: 53px;
+        bottom: 3%;
+        left: 19%;
+    }
+    
+    #contact .contact-img .contact-subimg .typescript {
+        height: 48px;
+        top: 52%;
+        left: 7%;
+    }
 }
