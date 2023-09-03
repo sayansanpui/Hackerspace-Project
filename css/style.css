@@ -259,8 +259,11 @@ p {
 }
 
 #mobile {
+    position: absolute;
+    top: 35px;
+    right: 45px;
     display: none;
-    align-items: center;
+    
 }
 
 #close {

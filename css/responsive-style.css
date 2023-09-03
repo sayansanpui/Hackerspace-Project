@@ -1,3 +1,5 @@
+@import url("style.css");
+
 @media (max-width: 1060px) {
     .section-p1 {
         padding: 64px 58px 76px 60px;
@@ -71,24 +73,9 @@
     .section-p1 {
         padding: 0;
     }
-    /* #mobile {
-        display: flex;
-        align-items: center;
+    #header {
+        justify-content: center;
     }
-    
-    #mobile i {
-        padding-left: 20px;
-        font-size: 24px;
-        color: #1a1a1a;
-    }
-    #close {
-        top: 30px;
-        left: 30px;
-        color: #222;
-        font-size: 24px;
-        position: absolute;
-        display: initial;
-    } */
     #intro .intro-btn {
         display: block;
         margin-top: 20px;
@@ -111,9 +98,63 @@
 }
 
 @media (max-width: 685px) {
-    #header .nevbar-border {
+    /* #header .nevbar-border {
+        display: none;
+    } */
+    #header {
+        padding-top: 72px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        /* left: 42%; */
+        left: 999px;
+        height: 100vh;
+        width: 300vh;
+        background-color: var(--background-colour);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+    #navbar.active2 {
+        left: 42%;
+    }
+    #bar.active3 {
         display: none;
     }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 13px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+    #mobile {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    #mobile i {
+        padding-left: 20px;
+        font-size: 24px;
+        color: #fff;
+    }
+    /* #close {
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+        position: absolute;
+        display: initial;
+    } */
     #intro {
         padding: 0 20px;
     }
