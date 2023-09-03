@@ -71,7 +71,7 @@
     .section-p1 {
         padding: 0;
     }
-    #mobile {
+    /* #mobile {
         display: flex;
         align-items: center;
     }
@@ -88,7 +88,7 @@
         font-size: 24px;
         position: absolute;
         display: initial;
-    }
+    } */
     #intro .intro-btn {
         display: block;
         margin-top: 20px;
