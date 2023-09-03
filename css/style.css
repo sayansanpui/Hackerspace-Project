@@ -40,10 +40,23 @@ ol {
     --secondry-color: #D7D7D7;
     --thirdry-color: #A6A6A4;
     --white-color: #FFFFFF;
+
+    --background-img: url("../assets/images/background.png");
     
     /* --primary-font: 'roboto', sans-serif; */
     --primary-font: 'roboto', sans-serif;
     --secondry-font: 'inter', sans-serif;
+}
+
+.light-theme {
+    --background-colour: #FFFFFF;
+    --background-colour-light: #E3E3E3;
+    --primary-color: #E75F00;
+    --secondry-color: #282828;
+    --thirdry-color: #A6A6A4;
+    --white-color: #000000;
+
+    --background-img: url("../assets/images/backgroundLight.jpeg");
 }
 
 html {
@@ -246,6 +259,21 @@ p {
     font-size: 22px;
 }
 
+#header .header-allIcons {
+    height: 51px;
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dl-mode {
+    width: 30px;
+    padding-top: 11.5px;
+    cursor: pointer;
+    margin: 0;
+}
+
 #header .header-icon {
     height: 51px;
     width: 120px;
@@ -277,7 +305,8 @@ p {
 ================================================
 */
 #intro {
-    background-image: url("../assets/images/background.png");
+    /* background-image: url("../assets/images/background.png"); */
+    background-image: var(--background-img);
     height: 150vh;
     width: 100%;
     background-size: cover;
@@ -397,36 +426,47 @@ p {
 }
 
 #contact .contact-img .contact-subimg .html {
-    height: 90px;
+    height: 86px;
     position: absolute;
-    top: 0;
+    top: 9%;
     left: 42%;
 }
 
 #contact .contact-img .contact-subimg .css {
     height: 100px;
     position: absolute;
-    top: 34%;
+    top: 46%;
     right: 0%;
 }
 
 #contact .contact-img .contact-subimg .js {
     height: 80px;
     position: absolute;
-    bottom: 12%;
+    bottom: 3%;
     right: 17%;
 }
 
 #contact .contact-img .contact-subimg .react {
     height: 100px;
     position: absolute;
-    bottom: 11%;
+    bottom: 1%;
     left: 14%;
 }
 
 #contact .contact-img .contact-subimg .typescript {
     height: 80px;
     position: absolute;
-    top: 38%;
+    top: 49%;
     left: 1%;
+}
+
+
+/*
+================================================
+    section-3 footer
+================================================
+*/
+
+.text-whitee {
+    color: var(--white-color);
 }
