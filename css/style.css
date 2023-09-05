@@ -191,6 +191,32 @@ p {
 
 /*
 ================================================
+    Animations
+================================================
+*/
+section {
+    /* display: grid; */
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+/*
+================================================
     Header Design
 ================================================
 */
@@ -330,20 +356,27 @@ p {
 }
 
 #intro .intro-search {
-    width: 352px;
+    /* width: 260px; */
+    width: 190px;
     height: 47px;
     padding: 8.5px 22px;
     background-color: var(--background-colour-light);
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    transition: 0.7s ease-in-out;
+}
+
+#intro .intro-search:hover {
+    width: 355px;
 }
 
 #intro .intro-search i {
     margin-top: 2px;
     font-size: 24px;
     color: var(--thirdry-color);
+    padding-right: 2px;
 }
 
 
@@ -415,6 +448,26 @@ p {
     align-items: center;
 }
 
+/* #contact .contact-img .contact-subimg .img-allLogos {
+    display: flex;
+}
+
+#contact .contact-img .contact-subimg .img-allLogos:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+#contact .contact-img .contact-subimg .img-allLogos:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+#contact .contact-img .contact-subimg .img-allLogos:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+#contact .contact-img .contact-subimg .img-allLogos:nth-child(5) {
+    transition-delay: 800ms;
+} */
+
 #contact .contact-img {
     /* padding: 45px; */
     padding: 90px 45px 0 45px;
@@ -430,6 +483,11 @@ p {
     position: absolute;
     top: 9%;
     left: 42%;
+    transition: 0.3s ease-in-out;
+}
+
+#contact .contact-img .contact-subimg .html:hover {
+    height: 91px;
 }
 
 #contact .contact-img .contact-subimg .css {
@@ -437,6 +495,11 @@ p {
     position: absolute;
     top: 46%;
     right: 0%;
+    transition: 0.3s ease-in-out;
+}
+
+#contact .contact-img .contact-subimg .css:hover {
+    height: 105px;
 }
 
 #contact .contact-img .contact-subimg .js {
@@ -444,6 +507,11 @@ p {
     position: absolute;
     bottom: 3%;
     right: 17%;
+    transition: 0.3s ease-in-out;
+}
+
+#contact .contact-img .contact-subimg .js:hover {
+    height: 85px;
 }
 
 #contact .contact-img .contact-subimg .react {
@@ -451,6 +519,11 @@ p {
     position: absolute;
     bottom: 1%;
     left: 14%;
+    transition: 0.3s ease-in-out;
+}
+
+#contact .contact-img .contact-subimg .react:hover {
+    height: 105px;
 }
 
 #contact .contact-img .contact-subimg .typescript {
@@ -458,8 +531,16 @@ p {
     position: absolute;
     top: 49%;
     left: 1%;
+    transition: 0.3s ease-in-out;
 }
 
+#contact .contact-img .contact-subimg .typescript:hover {
+    height: 85px;
+}
+
+/* #contact .contact-img .contact-subimg .img-logo:hover {
+    height: calc(100% + 5px);
+} */
 
 /*
 ================================================
