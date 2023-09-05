@@ -5,19 +5,21 @@ const body = document.getElementById('bddy');
 
 if (bar) {
     bar.addEventListener('click', () => {
-        nav.classList.add('active2');
         bar.classList.add('active3');
         body.classList.add('active4');
+        nav.classList.add('active2');
     })
 }
 
 if (close) {
     close.addEventListener('click', () => {
-        nav.classList.remove('active2');
         bar.classList.remove('active3');
         body.classList.remove('active4');
+        nav.classList.remove('active2');
     })
 }
+
+
 
 
 var dlmode = document.getElementById('dl-mode');
@@ -30,6 +32,8 @@ dlmode.onclick = function() {
         dlmode.src = "../assets/images/sun.png"
     }
 }
+
+
 
 
 
@@ -46,3 +50,11 @@ const observer = new IntersectionObserver((entries) =>{
 
 const hiddenElement = document.querySelectorAll('.hidden');
 hiddenElement.forEach((el) => observer.observe(el));
+
+
+
+var loader = document.getElementById('preloader');
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
