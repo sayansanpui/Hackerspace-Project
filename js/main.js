@@ -1,3 +1,4 @@
+// NavBar
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
@@ -19,7 +20,7 @@ if (close) {
     })
 }
 
-
+// Dark-Light Mode
 
 
 var dlmode = document.getElementById('dl-mode');
@@ -35,6 +36,7 @@ dlmode.onclick = function() {
 
 
 
+// Animation
 
 
 const observer = new IntersectionObserver((entries) =>{
