@@ -194,12 +194,12 @@ p {
     Animations
 ================================================
 */
-section {
-    /* display: grid; */
+/* section {
+    display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
-}
+    min-height: 100vh; 
+} */
 
 .hidden {
     opacity: 0;
