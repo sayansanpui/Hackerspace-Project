@@ -393,6 +393,10 @@ p {
     color: var(--white-color);
 } 
 
+#intro .intro-search:focus-within {
+    width: 355px;
+}
+
 #intro .intro-btn {
     display: none;
 }
