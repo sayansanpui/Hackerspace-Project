@@ -20,21 +20,6 @@ if (close) {
     })
 }
 
-// Dark-Light Mode
-
-
-var dlmode = document.getElementById('dl-mode');
-
-dlmode.onclick = function() {
-    document.body.classList.toggle("light-theme");
-    if (document.body.classList.contains("light-theme")) {
-        dlmode.src = "../assets/images/moon.png"
-    } else {
-        dlmode.src = "../assets/images/sun.png"
-    }
-}
-
-
 
 // Animation
 
@@ -60,3 +45,37 @@ var loader = document.getElementById('preloader');
 window.addEventListener("load", function(){
     loader.style.display = "none";
 })
+
+
+// Dark-Light Mode
+
+
+// var dlmode = document.getElementById('dl-mode');
+
+// dlmode.onclick = function() {
+//     document.body.classList.toggle("light-theme");
+//     if (document.body.classList.contains("light-theme")) {
+//         dlmode.src = "../assets/images/moon.png"
+//     } else {
+//         dlmode.src = "../assets/images/sun.png"
+//     }
+// }
+
+
+var dlmode = document.getElementById('dl-mode');
+const toggleSwitch = document.querySelector(
+'.switch input[type="checkbox"]'
+);
+
+function switchTheme(e) {
+    document.body.classList.toggle("light-theme");
+    if (e.target.checked) {
+        document.body.classList.add("dark");
+    } else {
+        document.body.classList.remove("dark");
+    }
+}
+
+toggleSwitch.addEventListener("change", switchTheme, false);
+
+
