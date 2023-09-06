@@ -34,14 +34,14 @@ ol {
 
 /*==== Variable Define ====*/
 :root {
-    --background-colour: #000000;
-    --background-colour-light: #1C1C1C;
+    --background-colour: #FFFFFF;
+    --background-colour-light: #E3E3E3;
     --primary-color: #E75F00;
-    --secondry-color: #D7D7D7;
+    --secondry-color: #282828;
     --thirdry-color: #A6A6A4;
-    --white-color: #FFFFFF;
-
-    --background-img: url("../assets/images/background.png");
+    --white-color: #000000;
+    
+    --background-img: url("../assets/images/backgroundLight.jpeg");
     
     /* --primary-font: 'roboto', sans-serif; */
     --primary-font: 'roboto', sans-serif;
@@ -49,14 +49,13 @@ ol {
 }
 
 .light-theme {
-    --background-colour: #FFFFFF;
-    --background-colour-light: #E3E3E3;
+    --background-colour: #000000;
+    --background-colour-light: #1C1C1C;
     --primary-color: #E75F00;
-    --secondry-color: #282828;
+    --secondry-color: #D7D7D7;
     --thirdry-color: #A6A6A4;
-    --white-color: #000000;
-
-    --background-img: url("../assets/images/backgroundLight.jpeg");
+    --white-color: #FFFFFF;
+    --background-img: url("../assets/images/background.png");
 }
 
 html {
